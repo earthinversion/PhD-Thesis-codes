@@ -1,0 +1,10 @@
+m=200; % number of generations
+n=50; % number of trials
+n2=10; % number of trials to be kept
+
+A=12+randn(n,1); 
+B=pi/12+randn(n,1); 
+C=60+randn(n,1);
+
+for jgen=1:m
+    

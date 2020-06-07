@@ -1,0 +1,9 @@
+function E=fit_arrival_times(x)
+    eq_loc = [2 2 -2];
+    dist = sqrt((eq_loc(1) - stnx)^2 + (eq_loc(2) - stny)^2 + (eq_loc(3) - stnz)^2);
+    arr = dist/vel + origintime;
+    
+    
+    xx=1:24;
+    yy=[75 77 76 73 69 68 63 59 57 55 54 52 50 50 49 49 49 50 54 56 59 63 67 72];   
+    E=sum((x(1)*cos(x(2)*xx)+x(3)-yy).^2); 
